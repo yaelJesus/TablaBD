@@ -1,5 +1,5 @@
 <?php
-    $borrar = $_POST["borrar"];
+    $borrar = $_GET["borrar"];
         
     $enlace = mysqli_connect("localhost", "root", "", "tec");
     $datos = "DELETE FROM `calificaciones` WHERE IdCalificacion=".$borrar.";";

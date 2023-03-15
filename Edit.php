@@ -7,7 +7,7 @@
     $calificacion = $_GET["calificacion"];
 
     $enlace = mysqli_connect("localhost", "root", "", "tec");
-    $datos == "UPDATE calificaciones SET Materia='$materia',Nombre='$nombre',correo='$Correo',Calificacion='$calificacion',Matricula='$matricula' WHERE IdCalificacion = '$editar'";
+    $datos = "UPDATE calificaciones SET Materia='$materia',Nombre='$nombre',Correo='$correo',Calificacion='$calificacion',Matricula='$matricula' WHERE IdCalificacion = '$editar'";
     /*$datos = "UPDATE `calificaciones` SET `IdCalificacion`='".$editar."',`Nombre`='".$nombre."',`Matricula`='".$matricula."',`Correo`='".$correo."',`Materia`='".$materia."',`Calificacion`='".$calificacion."' WHERE IdCalificacion=".$editar.";";*/
 
     if ($enlace->query($datos) == TRUE) {

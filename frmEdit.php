@@ -6,9 +6,9 @@
 </head>
 <body>
   <center>
-  <form action="Insert.php" method="get">
+  <form action="Edit.php" method="get">
     <?php
-    $editar = $_POST["editar"];
+    $editar = $_GET["editar"];
     echo '
     <input type="hidden" name="editar" value="'.$editar.'">'
     ?>
